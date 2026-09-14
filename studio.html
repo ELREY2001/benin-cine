@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio · Soumettre un projet · Bénin Ciné</title>
+<meta name="description" content="Bénin Ciné Studio : soumettez un projet de film ou de série, rejoignez l'incubateur de talents ou devenez partenaire de production.">
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:image" content="assets/brand/og-image.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-page="studio">
+<main>
+  <section class="section" style="padding-top:calc(var(--nav-h) + 56px)">
+    <div class="wrap" style="max-width:820px">
+      <p class="eyebrow">Bénin Ciné Studio</p>
+      <h1 class="h-display" style="margin:14px 0 18px">Votre projet<br>mérite un écran.</h1>
+      <p class="lead">
+        Nous recevons les projets de films, séries, web-séries, documentaires et courts métrages
+        portés par des auteurs béninois ou tournés au Bénin. Chaque dossier est lu,
+        noté et reçoit une réponse motivée sous 6 semaines.
+      </p>
+      <div class="hero-chips" style="margin-top:26px">
+        <span class="chip chip-gold">Co-production</span>
+        <span class="chip">Financement</span>
+        <span class="chip">Post-production</span>
+        <span class="chip">Diffusion plateforme &amp; salles</span>
+        <span class="chip">Formation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FORMULAIRE ======== -->
+  <section class="section-tight">
+    <div class="wrap" style="max-width:860px">
+      <div class="form-card">
+        <div class="between" style="margin-bottom:22px;flex-wrap:wrap;gap:12px">
+          <h2 class="h2">Déposer un projet</h2>
+          <span class="chip" id="saved-hint">Brouillon enregistré automatiquement</span>
+        </div>
+
+        <div class="steps" id="steps"></div>
+        <div class="progress-line"><i id="prog"></i></div>
+
+        <form id="form" novalidate></form>
+
+        <div class="between" style="margin-top:26px;gap:12px;flex-wrap:wrap">
+          <button class="btn btn-ghost" id="prev">Précédent</button>
+          <div class="row" style="gap:10px">
+            <button class="btn btn-ghost" id="clear">Effacer</button>
+            <button class="btn btn-primary" id="next">Continuer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== INCUBATEUR ======== -->
+  <section class="section" id="incubateur" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+    <div class="wrap" class="split" style="gap:clamp(24px,4vw,56px)">
+      <div>
+        <p class="eyebrow">Incubateur</p>
+        <h2 class="h1" style="margin:12px 0 16px">Révéler les talents<br>de demain</h2>
+        <p class="lead">
+          Un programme d'accompagnement pour les réalisateurs, scénaristes, comédiens et
+          techniciens : ateliers d'écriture, direction d'acteurs, image, son, montage,
+          production et diffusion.
+        </p>
+        <div class="timeline-v" style="margin-top:28px">
+          <div class="tl"><b>1 · Réception</b><p>Accusé de réception et lecture par le comité éditorial.</p></div>
+          <div class="tl"><b>2 · Lecture</b><p>Grille de lecture : histoire, ancrage, faisabilité, équipe, budget.</p></div>
+          <div class="tl"><b>3 · Audition</b><p>Entretien avec l'équipe, pitch oral, note d'intention.</p></div>
+          <div class="tl"><b>4 · Décision</b><p>Réponse motivée sous 6 semaines, orientation co-production ou incubation.</p></div>
+          <div class="tl"><b>5 · Accompagnement</b><p>Développement, tournage, post-production, diffusion et suivi d'audience.</p></div>
+        </div>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <h3 class="h3" style="margin-bottom:12px">Critères de sélection</h3>
+          <ul class="stack" style="gap:12px">
+            <li class="row" style="align-items:flex-start;gap:12px">${""}<span class="chip chip-gold">1</span><span class="small">Ancrage béninois : histoire, langue, territoire ou personnages.</span></li>
+            <li class="row" style="align-items:flex-start;gap:12px"><span class="chip chip-gold">2</span><span class="small">Qualité du récit et tenue du scénario.</span></li>
+            <li class="row" style="align-items:flex-start;gap:12px"><span class="chip chip-gold">3</span><span class="small">Faisabilité : budget, calendrier, équipe identifiée.</span></li>
+            <li class="row" style="align-items:flex-start;gap:12px"><span class="chip chip-gold">4</span><span class="small">Valeurs : authenticité, inclusion, respect des droits d'auteur.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="h3" style="margin-bottom:12px">Ce que nous apportons</h3>
+          <p class="muted small">Apport en coproduction (financier ou en industrie), accès aux moyens techniques,
+            encadrement par un réalisateur et un directeur de production, post-production,
+            plan de diffusion (salles, festivals, télévision, VOD) et tableau de bord d'audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PARTENAIRES ======== -->
+  <section class="section" id="partenaires">
+    <div class="wrap">
+      <div style="max-width:720px;margin-bottom:34px">
+        <p class="eyebrow">Partenaires &amp; mécènes</p>
+        <h2 class="h1" style="margin:12px 0 16px">Faire grandir<br>une industrie</h2>
+        <p class="lead">
+          Entreprises, institutions et fonds : associez votre marque à la renaissance du
+          cinéma béninois. Sponsoring de production, mécénat, achat de droits de diffusion,
+          coproduction ou parrainage de formation.
+        </p>
+      </div>
+      <div class="feat-grid" style="margin-bottom:34px">
+        <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></div><h3>Visibilité</h3><p>Présence au générique, avant-premières, campagnes de marque et contenus dédiés.</p></div>
+        <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></div><h3>Impact local</h3><p>Emplois directs sur les tournages, formation de techniciens, retombées économiques locales.</p></div>
+        <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><path d="M16 5.5a3.5 3.5 0 010 7M18 20a6 6 0 00-2-4.5"/></svg></div><h3>Mesure</h3><p>Rapports d'audience, couverture presse, bilan d'impact remis à chaque partenaire.</p></div>
+      </div>
+      <div class="form-card" style="max-width:760px">
+        <h3 class="h3" style="margin-bottom:18px">Être contacté par l'équipe</h3>
+        <form id="partner-form" class="stack">
+          <div class="two">
+            <div class="field"><label for="p-nom">Nom &amp; prénom <span class="req">*</span></label><input class="input" id="p-nom" required></div>
+            <div class="field"><label for="p-org">Structure</label><input class="input" id="p-org"></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="p-mail">Email <span class="req">*</span></label><input class="input" id="p-mail" type="email" required></div>
+            <div class="field"><label for="p-tel">Téléphone</label><input class="input" id="p-tel" inputmode="tel"></div>
+          </div>
+          <div class="field">
+            <label for="p-objet">Objet <span class="req">*</span></label>
+            <select class="select" id="p-objet">
+              <option>Sponsoring / mécénat</option><option>Coproduction</option>
+              <option>Achat de droits de diffusion</option><option>Parrainage de formation</option>
+              <option>Accueil de tournage</option><option>Autre</option>
+            </select>
+          </div>
+          <div class="field"><label for="p-msg">Message</label><textarea class="textarea" id="p-msg"></textarea></div>
+          <button class="btn btn-primary btn-lg" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!-- Détection Netlify Forms : le formulaire visible étant généré en JS,
+     ces gabarits statiques déclarent les champs au moment du déploiement. -->
+<form name="depot-projet" netlify netlify-honeypot="bot-field" hidden>
+  <input name="nom"><input name="structure"><input name="role"><input name="email">
+  <input name="tel"><input name="ville"><input name="titre"><input name="type">
+  <input name="genre"><input name="duree"><textarea name="synopsis"></textarea>
+  <input name="langues"><input name="stade"><input name="besoins"><input name="budget">
+  <input name="calendrier"><input name="lien"><textarea name="intention"></textarea>
+  <input name="droits"><input name="id">
+</form>
+<form name="partenaire" netlify netlify-honeypot="bot-field" hidden>
+  <input name="nom"><input name="org"><input name="mail"><input name="tel">
+  <input name="objet"><textarea name="message"></textarea>
+</form>
+</main>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/studio.js"></script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://benincine.netlify.app/sitemap.xml

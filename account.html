@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon compte · Bénin Ciné</title>
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-page="account">
+<main style="padding-top:calc(var(--nav-h) + 40px)">
+  <div class="wrap">
+    <div class="between" style="flex-wrap:wrap;gap:14px;margin-bottom:28px">
+      <div>
+        <p class="eyebrow">Mon espace</p>
+        <h1 class="h1" style="margin-top:10px">Bonjour, <span id="hello">vous</span></h1>
+      </div>
+      <div class="row" style="gap:10px;flex-wrap:wrap">
+        <span class="chip chip-gold" id="plan-chip"></span>
+        <a class="btn btn-ghost btn-sm" href="browse.html">Explorer le catalogue</a>
+      </div>
+    </div>
+
+    <div class="split-side" style="gap:clamp(20px,3vw,44px);padding-bottom:80px">
+      <aside>
+        <div class="card" style="padding:14px;position:sticky;top:calc(var(--nav-h) + 20px)">
+          <nav class="stack" style="gap:4px" id="side">
+            <a href="#profils">Profils</a>
+            <a href="#reprendre">Reprendre</a>
+            <a href="#liste">Ma liste</a>
+            <a href="#telechargements">Téléchargements</a>
+            <a href="#abonnement">Abonnement</a>
+            <a href="#parametres">Paramètres</a>
+            <a href="#appareils">Appareils</a>
+          </nav>
+        </div>
+      </aside>
+
+      <div class="stack" style="gap:26px">
+        <section class="card" id="profils">
+          <h2 class="h2" style="margin-bottom:6px">Profils</h2>
+          <p class="muted small" style="margin-bottom:20px">Jusqu'à 5 profils, dont un profil enfant avec catalogue filtré.</p>
+          <div class="team-grid" id="profiles" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr))"></div>
+          <button class="btn btn-ghost btn-sm" id="add-profile" style="margin-top:18px">+ Ajouter un profil</button>
+        </section>
+
+        <section class="card" id="reprendre">
+          <h2 class="h2" style="margin-bottom:16px">Reprendre le visionnage</h2>
+          <div id="resume-list" class="stack" style="gap:12px"></div>
+        </section>
+
+        <section class="card" id="liste">
+          <h2 class="h2" style="margin-bottom:16px">Ma liste</h2>
+          <div class="grid" id="list-grid" style="grid-template-columns:repeat(auto-fill,minmax(130px,1fr))"></div>
+        </section>
+
+        <section class="card" id="telechargements">
+          <h2 class="h2" style="margin-bottom:6px">Téléchargements</h2>
+          <p class="muted small" style="margin-bottom:16px">Titres disponibles hors-ligne sur cet appareil.</p>
+          <div class="grid" id="dl-grid" style="grid-template-columns:repeat(auto-fill,minmax(130px,1fr))"></div>
+        </section>
+
+        <section class="card" id="abonnement">
+          <h2 class="h2" style="margin-bottom:16px">Abonnement &amp; facturation</h2>
+          <div id="plan-box"></div>
+        </section>
+
+        <section class="card" id="parametres">
+          <h2 class="h2" style="margin-bottom:18px">Paramètres</h2>
+          <div class="stack" id="settings"></div>
+        </section>
+
+        <section class="card" id="appareils">
+          <h2 class="h2" style="margin-bottom:6px">Appareils</h2>
+          <p class="muted small" style="margin-bottom:16px">Appareils connectés à votre compte.</p>
+          <div class="stack" id="devices" style="gap:10px"></div>
+          <button class="btn btn-ghost btn-sm" id="logout" style="margin-top:18px">Se déconnecter</button>
+          <button class="btn btn-ghost btn-sm" id="wipe" style="margin-top:10px;color:#FF8A90">Supprimer toutes mes données locales</button>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/account.js"></script>
+</body>
+</html>

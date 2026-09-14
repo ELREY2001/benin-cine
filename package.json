@@ -1,0 +1,13 @@
+{
+  "name": "benincine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bénin Ciné, plateforme de streaming",
+  "scripts": {
+    "start": "node serve-render.js",
+    "dev": "node serve-render.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

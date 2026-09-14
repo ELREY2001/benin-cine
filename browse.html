@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catalogue · Bénin Ciné</title>
+<meta name="description" content="Parcourez tout le catalogue Bénin Ciné : films, séries, documentaires, courts métrages, jeunesse et spectacles.">
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:image" content="assets/brand/og-image.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-page="browse">
+<main style="padding-top:calc(var(--nav-h) + 34px)">
+  <div class="wrap">
+    <p class="eyebrow">Explorer</p>
+    <h1 class="h1" style="margin:12px 0 8px">Le catalogue</h1>
+    <p class="lead" id="count"></p>
+  </div>
+
+  <div class="wrap" style="margin-top:26px">
+    <div class="toolbar">
+      <input class="input" id="q" type="search" placeholder="Rechercher un titre, un genre, une langue…">
+      <select class="select" id="sort" style="width:auto">
+        <option value="recent">Tri : plus récents</option>
+        <option value="az">Tri : A → Z</option>
+        <option value="duree">Tri : durée</option>
+        <option value="type">Tri : type</option>
+      </select>
+      <label class="check">
+        <input type="checkbox" id="hideDemo"><span>Masquer les emplacements de démonstration</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="wrap" class="split-side" style="padding-bottom:80px">
+    <aside>
+      <div class="card" style="padding:20px;position:sticky;top:calc(var(--nav-h) + 20px)">
+        <h4 class="side-title">Filtres</h4>
+        <div class="stack" id="filters"></div>
+        <button class="btn btn-ghost btn-sm btn-block" id="reset" style="margin-top:18px">Réinitialiser</button>
+      </div>
+    </aside>
+    <div>
+      <div class="row" style="justify-content:center;margin-bottom:26px">
+        <div id="flagfilter"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/browse.js"></script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});</script>
+</body>
+</html>

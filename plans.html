@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abonnements · Bénin Ciné</title>
+<meta name="description" content="Formules Bénin Ciné : Mobile, Standard, Premium et Mécène. Paiement MTN MoMo, Moov Money, Orange Money, Wave ou carte bancaire.">
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:image" content="assets/brand/og-image.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-page="plans">
+<main>
+  <section class="section" style="padding-top:calc(var(--nav-h) + 60px)">
+    <div class="wrap">
+      <div class="center" style="max-width:760px;margin-inline:auto">
+        <p class="eyebrow" style="justify-content:center">Abonnements</p>
+        <h1 class="h1" style="margin:14px 0 16px">Choisissez comment<br>vous voulez regarder</h1>
+        <p class="lead">
+          Sans engagement, annulable à tout moment. Payable en Mobile Money, par carte bancaire
+          ou en espèces chez un agent agréé. 7 jours offerts pour découvrir la plateforme.
+        </p>
+        <div class="row" style="justify-content:center;margin-top:28px">
+          <div class="toggle-billing" id="billing">
+            <button data-b="mensuel" class="active">Mensuel</button>
+            <button data-b="annuel">Annuel, 2 mois offerts</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans" id="plans" style="margin-top:44px"></div>
+
+      <div class="wrap center" style="margin-top:44px">
+        <p class="eyebrow" style="justify-content:center">Moyens de paiement</p>
+        <div class="pay-grid" id="pays" style="justify-content:center;margin-top:18px"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+    <div class="wrap">
+      <h2 class="h2 center" style="margin-bottom:26px">Comparer les formules</h2>
+      <div class="card" style="padding:0;overflow:auto">
+        <table class="compare">
+          <thead>
+            <tr><th>Fonctionnalité</th><th>Mobile</th><th>Standard</th><th>Premium</th><th>Mécène</th></tr>
+          </thead>
+          <tbody id="cmp"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" class="split" style="gap:clamp(24px,4vw,54px)">
+      <div>
+        <p class="eyebrow">Carte cadeau</p>
+        <h2 class="h2" style="margin:12px 0 12px">Offrir Bénin Ciné</h2>
+        <p class="lead">Un code rechargeable, valable 12 mois, utilisable sur n'importe quelle formule.</p>
+        <form class="row" id="gift" style="gap:12px;margin-top:22px;flex-wrap:wrap">
+          <input class="input" style="flex:1;min-width:180px" placeholder="Code cadeau" aria-label="Code cadeau">
+          <button class="btn btn-primary" type="submit">Activer</button>
+        </form>
+        <p class="muted small" style="margin-top:12px">Les cartes cadeaux sont distribuées lors de nos avant-premières et chez nos partenaires.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Questions fréquentes</p>
+        <div class="acc" id="faq" style="margin-top:16px"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/plans.js"></script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});</script>
+</body>
+</html>

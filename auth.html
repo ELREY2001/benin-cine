@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Connexion · Bénin Ciné</title>
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:image" content="assets/brand/og-image.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-page="auth">
+<main class="split-auth">
+  <section style="padding:calc(var(--nav-h) + 40px) clamp(20px,5vw,72px) 60px;max-width:620px;margin-inline:auto;width:100%">
+    <a href="index.html" class="brand" style="margin-bottom:34px">
+      <img src="assets/brand/logo-96.png" alt="Bénin Ciné" style="height:52px">
+    </a>
+
+    <div class="toggle-billing" id="tabs" style="margin-bottom:26px">
+      <button data-t="in" class="active">Connexion</button>
+      <button data-t="up">Créer un compte</button>
+    </div>
+
+    <h1 class="h1" id="h-title" style="margin-bottom:8px">Content de vous revoir</h1>
+    <p class="lead" id="h-sub">Connectez-vous pour retrouver vos titres et votre progression.</p>
+
+    <form id="form" class="stack" style="margin-top:28px"></form>
+
+    <div class="row" style="gap:12px;margin-top:22px;flex-wrap:wrap">
+      <button class="btn btn-ghost btn-block" id="oauth-google" style="flex:1">Continuer avec Google</button>
+      <button class="btn btn-ghost btn-block" id="oauth-apple" style="flex:1">Continuer avec Apple</button>
+    </div>
+    <p class="muted small center" style="margin-top:16px">
+      Démonstration : les comptes sont stockés localement dans votre navigateur.
+    </p>
+  </section>
+
+  <aside style="position:relative;min-height:100vh;display:grid;place-items:center;overflow:hidden;border-left:1px solid var(--line)">
+    <img src="assets/img/hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <div style="position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 40%,rgba(7,7,10,.45),rgba(7,7,10,.94))"></div>
+    <div style="position:relative;text-align:center;padding:40px;max-width:420px">
+      <img src="assets/brand/logo-512.png" alt="Bénin Ciné" style="width:180px;margin:0 auto 26px;border-radius:26px">
+      <h2 class="h2">Nos histoires.<br>Notre écran.</h2>
+      <p class="muted small" style="margin-top:14px">
+        Films, séries, documentaires et créations jeunesse, produits au Bénin, diffusés partout.
+      </p>
+    </div>
+  </aside>
+</main>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

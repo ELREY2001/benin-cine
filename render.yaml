@@ -1,0 +1,18 @@
+# Déploiement automatique sur Render (Blueprint).
+# Si vous créez le site à la main, ces valeurs correspondent aux champs de l'interface.
+services:
+  - type: web
+    name: benincine
+    runtime: static
+    # Le site est déjà prêt : aucune étape de construction, aucun dossier intermédiaire.
+    staticPublishPath: .
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=3600, must-revalidate
+      - path: /assets/video/*
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff

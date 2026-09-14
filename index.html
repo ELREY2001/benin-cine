@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bénin Ciné · Le cinéma béninois, en streaming</title>
+<meta name="description" content="Bénin Ciné : maison de production et plateforme de diffusion du cinéma béninois. Films, séries, documentaires, jeunesse. Paiement Mobile Money, lecture hors-ligne.">
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/brand/logo-96.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:title" content="Bénin Ciné">
+<meta property="og:description" content="La maison de production et de diffusion du cinéma béninois.">
+<meta property="og:image" content="assets/brand/og-image.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-page="index">
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-media">
+      <video autoplay muted loop playsinline poster="assets/img/hero.jpg">
+        <source src="assets/video/hero-loop.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-fade"></div>
+    <div class="hero-inner wrap">
+      <img class="hero-logo" src="assets/brand/logo-512.png" alt="Bénin Ciné">
+      <p class="eyebrow">Maison de production &amp; diffusion · Cotonou</p>
+      <h1>Nos histoires.<br><em>Notre écran.</em></h1>
+      <p class="lead">
+        La plateforme qui produit, restaure et diffuse le cinéma béninois : films, séries,
+        documentaires et créations jeunesse. En français et en langues nationales, avec
+        sous-titres, lecture hors-ligne et paiement Mobile Money.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="plans.html" data-cta="hero-abonner">Commencer (7 jours offerts)</a>
+        <a class="btn btn-ghost btn-lg" href="browse.html">Explorer le catalogue</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip chip-gold">Paiement MTN MoMo · Moov · Wave</span>
+        <span class="chip">Téléchargement hors-ligne</span>
+        <span class="chip">Sous-titres FR / EN / Fon / Yoruba</span>
+        <span class="chip">Sans engagement</span>
+      </div>
+    </div>
+    <div class="scroll-cue">Découvrir<span></span></div>
+  </section>
+
+  <!-- ============ TOP 10 centré, juste sous la présentation ============ -->
+  <section class="section-tight" id="topsection">
+    <div class="wrap">
+      <div class="center" style="max-width:760px;margin-inline:auto">
+        <p class="eyebrow" style="justify-content:center">Classement du jour</p>
+        <h2 class="h1" style="margin-top:12px">Top 10 au Bénin
+          <span class="mini-flag" aria-hidden="true" style="width:30px;height:20px;display:inline-flex;vertical-align:-2px;margin-left:10px;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.22)">
+            <i style="width:34%;background:#008751"></i>
+            <i style="width:66%;background:linear-gradient(180deg,#FCD116 50%,#E8112D 50%)"></i>
+          </span>
+        </h2>
+        <p class="lead" style="margin-top:12px">Les dix œuvres les plus regardées aujourd’hui sur Bénin Ciné. Choisissez votre catégorie.</p>
+      </div>
+      <div class="row" style="justify-content:center;margin-top:26px">
+        <div id="flagfilter"></div>
+      </div>
+      <div class="top10-block" id="top10"></div>
+      <div class="center" style="margin-top:30px">
+        <a class="btn btn-ghost btn-sm" href="browse.html">Voir tout le catalogue</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RANGÉES ============ -->
+  <section class="section-tight">
+    <div class="rows" id="rows"></div>
+  </section>
+
+  <!-- ============ POURQUOI BÉNIN CINÉ ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div style="max-width:720px;margin-bottom:38px">
+        <p class="eyebrow">Ce qui nous différencie</p>
+        <h2 class="h1" style="margin-top:14px">Conçue pour le Bénin,<br>aux standards du monde.</h2>
+        <p class="lead" style="margin-top:16px">
+          Une plateforme pensée pour nos réalités : connexion irrégulière, paiement mobile,
+          langues nationales, et une rémunération juste des créateurs.
+        </p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat">
+          <div class="fi"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><polyline points="7 11 12 16 17 11"/><path d="M4 20h16"/></svg></div>
+          <h3>Hors-ligne natif</h3>
+          <p>Téléchargez en Wi-Fi, regardez sans data. Mode « Économie de données » avec paliers 240p / 480p / 720p / 1080p.</p>
+        </div>
+        <div class="feat">
+          <div class="fi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg></div>
+          <h3>Nos langues</h3>
+          <p>Audio et sous-titres en français, anglais, fon, yoruba, bariba, dendi, gun. Les versions en langues nationales sont mises en avant.</p>
+        </div>
+        <div class="feat">
+          <div class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+          <h3>Payer comme ici</h3>
+          <p>MTN MoMo, Moov Money, Orange Money, Wave, carte bancaire. Abonnement mensuel, annuel ou à la séance, sans engagement.</p>
+        </div>
+        <div class="feat">
+          <div class="fi"><svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></div>
+          <h3>Créateurs rémunérés</h3>
+          <p>Partage transparent des revenus avec les producteurs et ayants droit, tableau de bord d'audience pour chaque ayant droit.</p>
+        </div>
+        <div class="feat">
+          <div class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg></div>
+          <h3>Qualité cinéma</h3>
+          <p>Encodage adaptatif, audio stéréo/masterisé, restauration 2K/4K des œuvres du patrimoine, diffusion en salles et en VOD.</p>
+        </div>
+        <div class="feat">
+          <div class="fi"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><path d="M16 5.5a3.5 3.5 0 010 7M18 20a6 6 0 00-2-4.5"/></svg></div>
+          <h3>Ciné-club &amp; projections</h3>
+          <p>Avant-premières, projections populaires en plein air, masterclass : la plateforme prolonge la salle, elle ne la remplace pas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AGENDA ============ -->
+  <section class="section" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+    <div class="wrap">
+      <div class="between" style="margin-bottom:28px;flex-wrap:wrap;gap:14px">
+        <div>
+          <p class="eyebrow">Agenda</p>
+          <h2 class="h2" style="margin-top:12px">Avant-premières &amp; projections populaires</h2>
+        </div>
+        <a class="btn btn-ghost btn-sm" href="about.html#contact">Proposer une salle</a>
+      </div>
+      <div class="stack" id="events"></div>
+    </div>
+  </section>
+
+  <!-- ============ APPEL À PROJETS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="card split split-center" style="gap:clamp(24px,4vw,60px);padding:clamp(26px,4vw,54px);border-color:rgba(242,167,26,.28)">
+        <div>
+          <p class="eyebrow">Studio Bénin Ciné</p>
+          <h2 class="h1" style="margin-top:14px">Vous avez une histoire ?<br>Nous avons la maison.</h2>
+          <p class="lead" style="margin-top:16px">
+            Scénaristes, réalisateurs, techniciens, comédiens : nous lisons tous les projets.
+            Co-production, incubation, financement, post-production et diffusion sur la plateforme.
+          </p>
+          <div class="hero-actions" style="margin-top:26px">
+            <a class="btn btn-primary" href="studio.html">Soumettre un projet</a>
+            <a class="btn btn-outline" href="studio.html#partenaires">Devenir partenaire</a>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>5</b><span>Piliers d'activité</span></div>
+          <div class="stat"><b>12</b><span>Épisodes / série phare</span></div>
+          <div class="stat"><b>3</b><span>Formules d'abonnement</span></div>
+          <div class="stat"><b>100%</b><span>Catalogue béninois &amp; africain</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/home.js"></script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});</script>
+</body>
+</html>

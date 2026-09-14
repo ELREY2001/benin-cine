@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page introuvable · Bénin Ciné</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#07070A">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<main>
+  <section class="hero" style="min-height:100vh;align-items:center;text-align:center">
+    <div class="hero-media"><img src="assets/img/hero.jpg" alt=""></div>
+    <div class="hero-inner wrap" style="display:grid;justify-items:center">
+      <img class="hero-logo" src="assets/brand/logo-512.png" alt="Bénin Ciné" style="width:170px">
+      <p class="eyebrow" style="justify-content:center">Erreur 404</p>
+      <h1 style="margin-top:14px">Cette page<br><em>n'existe pas.</em></h1>
+      <p class="lead" style="margin-top:18px;max-width:46ch">
+        Le lien est peut-être obsolète, ou la séance a déjà commencé.
+        Retournons à l'affiche.
+      </p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-primary btn-lg" href="index.html">Retour à l'accueil</a>
+        <a class="btn btn-ghost btn-lg" href="browse.html">Voir le catalogue</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/js/core.js"></script>
+<script>BC.toast("Page introuvable", "Redirection vers l'accueil dans quelques secondes…", "err");</script>
+</body>
+</html>
